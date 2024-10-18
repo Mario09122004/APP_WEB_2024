@@ -1,0 +1,66 @@
+/* Estilos del main, section y footer */
+
+/* section */
+*{
+    margin: 0;
+    padding: 0;
+}
+div h2{
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    background-color: burlywood;
+    text-decoration: underline;
+    padding: 3rem;
+}
+div p{
+    text-align: justify;
+    margin:0rem 1rem;
+}
+div img{
+    display: block;
+    width: 32rem;
+    height: 32rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div a img{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem;
+    margin-left: auto;
+}
+footer{
+    background-color: silver;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    display: inline-block;
+    height: 1rem;
+    width: auto;
+    padding: 1rem;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+footer a:hover{
+    background-color: black;
+    cursor: pointer;
+    
+}
+footer a:active{
+    background-color: rgb(0, 0, 0,0.5);
+}
+
+/*
+Celular 365
+Tabllet 768
+Descktop 1024
+*/
