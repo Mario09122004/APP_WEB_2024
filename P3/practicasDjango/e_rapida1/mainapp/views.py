@@ -13,6 +13,7 @@ def about(request):
         'content':'..::Somos un equipo de Desarrollo de SW con DJango::..'
     })
 
+
 def mision(request):
     return render(request,'mainapp/mision.html',{
         'tittle':'Mision de la UTD',
