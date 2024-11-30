@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block tittle %}
+        {% comment "" %}
+            aqui va el contenido del bloque tittle
+        {% endcomment %}
+        {% endblock tittle %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}" type="text/css">
+</head>
+<body>
+    <header>
+        <div id="logotipo">
+            <img src="{% static "img/logodjango.webp" %}" alt="Imagen Django" title="Django">
+            <h1>Django Proyecto Web</h1>
+        </div>
+    </header>
+    <!--
+        <h1>Bienvenido a mi app web en Django</h1>
+        <h2>Desarrollo web con python y Django</h2>
+    -->
+    <nav>
+        <ul>
+            <li><a href="{% url "inicio" %}" >Inicio</a></li>
+            <li><a href="{% url "mision" %}">Mision</a></li>
+            <li><a href="{% url "vision" %}">Vision</a></li>
+            <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "registro" %}">Registro</a></li>
+            <li><a href="{% url "inicio_sesion" %}">Inicio de sesion</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <div class="box">
+            {% block content %}
+            {% comment "" %}
+                Aqui va el contenido de mi bloque  content
+            {% endcomment %}
+            {% endblock content %}
+        </div>
+     </section>
+</body>
+</html>
